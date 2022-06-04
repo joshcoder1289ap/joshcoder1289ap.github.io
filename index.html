@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Template Portofio HTML Basic</title>
+</head>
+<body>
+    <section id="home">
+        <div class="container">
+            <!-- Navigation bar start -->
+            <div class="navwrapper">
+                <ul class="navigation">
+                    <li class="nav">
+                        <a href="#home" class="navlink">Home</a>
+                    </li>
+                    <li class="nav">
+                        <a href="#about" class="navlink">About</a>
+                    </li>
+                    <li class="nav">
+                        <a href="#contact" class="navlink">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contentwrapper">
+                <h1>Home</h1>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container red">
+            <div class="contentwrapper">
+                <h1>About</h1>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container blue">
+            <div class="contentwrapper">
+                <h1>Contact</h1>
+            </div>
+        </div>
+    </section>
+    <div class="top" onclick="goToTop()">☝️</div>
+    <script>
+        const goToTop = () => {
+            return location.href = "#home";
+        }
+    </script>
+</body>
+</html>
